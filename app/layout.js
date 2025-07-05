@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
+import { dark } from "@clerk/themes";
 import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{baseTheme: "dark"}}>
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} `}
