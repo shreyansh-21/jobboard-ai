@@ -25,11 +25,17 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main className="min-h-screen">{children}</main>
+          <footer className="bg-muted/50 py-12">
+            <div className="container mx-auto px-4 text-center text-gray-200">
+              <p className="font-extrabold text-xl">Made with 💗 by{' '}
+                <a href="https://github.com/shreyansh-21" target="_blank" rel="noopener noreferrer" className="inline-block text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 hover:scale-110 transition duration-300 ease-in-out">Shreyansh↗</a></p>
+            </div>
+          </footer>
         </ThemeProvider>
       </body>
     </html>
