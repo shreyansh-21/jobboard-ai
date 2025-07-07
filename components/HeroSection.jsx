@@ -21,12 +21,14 @@ const HeroSection = () => {
             <div>
                 <Link href= "/dashboard"><Button size="lg" className= "px-8">Get Started!</Button></Link>
                 {/* loom video lagani hai  */}
-                <Link href= "/dashboard"><Button size="lg" className= "px-8" variant="outline">Get Started!</Button></Link>
+                <Link href= "/dashboard"><Button size="lg" className= "px-8" variant="outline">Demo Video</Button></Link>
             </div>
         </div>
 
-        <div>
-            <Spline scene="https://prod.spline.design/gpTQsAM4LpUOq6dn/scene.splinecode" />
+        <div className='relative overflow-hidden h-190 w-full'>
+            <div className='absolute inset-0 -bottom-15'>
+                <Spline scene="https://prod.spline.design/gpTQsAM4LpUOq6dn/scene.splinecode" />
+            </div>
         </div>
     </section>
   )
