@@ -1,7 +1,11 @@
+import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>Job Board Ai</div>
+    <div>Job Board Ai
+
+      <HeroSection/>
+    </div>
   );
 }
