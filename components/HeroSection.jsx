@@ -8,17 +8,18 @@ const HeroSection = () => {
     <section className='w-full pt-36 md:pt-48 pb-10'>
         <div className=' space-y-6 text-center'>
             <div className='space-y-6 mx-auto'>
-                <h1>
-                    Your AI Career Companion for
+                <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 bg-clip-text text-transparent drop-shadow-[0_2px_2px_rgba(255,255,255,0.1)]">
+                    Your AI-Powered Partner for
                     <br />
                     Professional Success
                 </h1>
-                <p>
-                    Advance your career with AI-driven insights and expert guidance.
+                <p className='mx-auto max-w-[750px] text-center text-lg md:text-xl'>
+                Resumes Reimagined. Interviews Mastered. Careers Transformed. <br />Your dream role is closer than you think. Let AI help you get there. Advance your career with AI-driven insights.
                 </p>
+
             </div>
 
-            <div>
+            <div className='flex justify-center gap-4'>
                 <Link href= "/dashboard"><Button size="lg" className= "px-8">Get Started!</Button></Link>
                 {/* loom video lagani hai  */}
                 <Link href= "/dashboard"><Button size="lg" className= "px-8" variant="outline">Demo Video</Button></Link>
