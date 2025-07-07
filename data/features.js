@@ -11,7 +11,7 @@ export const features = [
     icon: <MessagesSquare className="w-10 h-10 mb-4 text-primary" />,
     title: "Interview Practice & Feedback",
     description:
-      "Practice real interview questions for your field and get clear, helpful feedback so you can shine on the big day.",
+      "Practice real interview questions for your field and get clear, helpful feedback to shine on the big day.",
   },
   {
     icon: <BarChart3 className="w-10 h-10 mb-4 text-primary" />,
@@ -21,14 +21,8 @@ export const features = [
   },
   {
     icon: <FileText className="w-10 h-10 mb-4 text-primary" />,
-    title: "Smart Resume Builder",
+    title: "Smart Resume Building",
     description:
       "Create polished, ATS-friendly resumes in minutes with AI support and easy customization.",
-  },
-  {
-    icon: <PencilLine className="w-10 h-10 mb-4 text-primary" />,
-    title: "Custom Cover Letters",
-    description:
-      "Write unique cover letters tailored for every job, so you stand out every time you apply.",
   },
 ];
