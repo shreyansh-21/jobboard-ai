@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           <footer className="bg-muted/20 py-8">
             <div className="container mx-auto px-4 text-center text-gray-200">
               <p className="font-extrabold text-xl">Made with 💗 by{' '}
-                <a href="https://github.com/shreyansh-21" target="_blank" rel="noopener noreferrer" className="inline-block text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 hover:translate-x-2 hover:-translate-y-2 transition duration-200 ease-in-out">Shreyansh↗</a></p>
+                <a href="https://github.com/shreyansh-21" target="_blank" rel="noopener noreferrer" className="inline-block text-gray-400 border-b-2 border-transparent hover:border-gray-400 hover:translate-x-2 hover:-translate-y-2 transition duration-200 ease-in-out">Shreyansh↗</a></p>
             </div>
           </footer>
         </ThemeProvider>
