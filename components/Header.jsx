@@ -1,21 +1,9 @@
 import React from "react";
 import { Button } from "./ui/button";
-import {
-  PenBox,
-  LayoutDashboard,
-  FileText,
-  GraduationCap,
-  ChevronDown,
-  StarsIcon,
-} from "lucide-react";
+import {PenBox,LayoutDashboard,FileText,GraduationCap,ChevronDown,StarsIcon,} from "lucide-react";
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import {DropdownMenu,DropdownMenuContent,DropdownMenuItem,DropdownMenuTrigger,} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 // import { checkUser } from "@/lib/checkUser";
 
