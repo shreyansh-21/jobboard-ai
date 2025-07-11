@@ -1,10 +1,12 @@
+import { industries } from '@/data/industries'
 import React from 'react'
 
 const OnboardingPage = () => {
+  // Check if the user is onboarded
   return (
-    <div>
-      
-    </div>
+    <main>
+      <OnboardingForm industries ={industries}/>
+    </main>
   )
 }
 
