@@ -9,8 +9,16 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { onboardingSchema } from "@/app/lib/schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+
 
 const OnboardingForm = ({ industries }) => {
+
+  const onSubmit = (e) => {
+  e.preventDefault();
+  console.log('Form submitted!');
+};
 
   const [selectedIndustry, setSelectedIndustry] = useState(null);
   const router = useRouter();
@@ -22,7 +30,7 @@ const OnboardingForm = ({ industries }) => {
   });
 
   const watchIndustry = watch("industry");
-  
+
   return (
     <div className="flex items-center justify-center bg-background">
       <Card className="w-full max-w-lg mt-10 mx-2">
@@ -157,5 +165,5 @@ const OnboardingForm = ({ industries }) => {
     </div>
   )
 }
-f
+
 export default OnboardingForm
