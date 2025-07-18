@@ -25,16 +25,16 @@ export async function updateUser(data) {
 
             // If industry doesn't exist, create it with default values
             if (!industryInsight) {
-                const insights = await generateAIInsights(data.industry);
+                // const insights = await generateAIInsights(data.industry);
 
                 industryInsight = await db.industryInsight.create({
                     data: {
                         industry: data.industry,//Default values hain
                         salaryRanges: [],
                         growthRate: 0,
-                        demanLevel: "Medium",
+                        demandLevel: "MEDIUM",
                         topSkills: [],
-                        marketOutlook: "Neutral",
+                        marketOutlook: "NEUTRAL",
                         keyTrends: [],
                         recommendedSkills: [],
                         nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),//1 week me update hota hai
@@ -57,11 +57,11 @@ export async function updateUser(data) {
             return { updatedUser, industryInsight };
 
         }, { timeout: 10000, });
-        return result.user;
+        return {success: true, ...result};
 
     } catch (error) {
         console.error("Error updating user:", error.message);
-        throw new Error("Failed to update user");
+        throw new Error("Failed to update user"+error.message);
     }
 
 }

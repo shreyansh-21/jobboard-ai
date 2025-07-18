@@ -6,32 +6,51 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 import { onboardingSchema } from "@/app/lib/schema";
+import { updateUser } from "@/actions/user";
+import useFetch from "@/hooks/use-fetch";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 
 
 const OnboardingForm = ({ industries }) => {
 
-  const onSubmit = (e) => {
-  e.preventDefault();
-  console.log('Form submitted!');
-};
 
   const [selectedIndustry, setSelectedIndustry] = useState(null);
   const router = useRouter();
 
+  const {loading: updateLoading,fn: updateUserFn,data: updateResult,} = useFetch(updateUser);
 
   const { register, handleSubmit, formState: { errors }, setValue, watch,
   } = useForm({
     resolver: zodResolver(onboardingSchema),
   });
 
+  const onSubmit = async (values) => {
+    try {
+      const formattedIndustry = `${values.industry}-${values.subIndustry.toLowerCase().replace(/ /g, "-")}`;
+
+      await updateUserFn({
+        ...values,
+        industry: formattedIndustry,
+      });
+    } 
+    catch (error) {console.error("Onboarding error:", error);}
+  };
+
+  useEffect(() => {
+    if (updateResult?.success && !updateLoading) {//fetched and no longer loading 
+      toast.success("Profile completed successfully!");
+      router.push("/dashboard");
+      router.refresh();
+    }
+  }, [updateResult, updateLoading]);
   const watchIndustry = watch("industry");
 
   return (
