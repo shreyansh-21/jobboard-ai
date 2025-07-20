@@ -43,7 +43,7 @@ export async function getIndustryInsights() {
   const user = await db.user.findUnique({
     where: { clerkUserId: userId },
     include: {
-      industryInsight: true,
+      industryInsight: true,//while fetching the user, include the industry insights otherwise throws a weird error
     },
   });
 
