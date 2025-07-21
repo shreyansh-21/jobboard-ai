@@ -57,6 +57,7 @@ export async function getResume() {
   });
 }
 
+// Improve with Ai we will make use of this in other project as well
 export async function improveWithAI({ current, type }) {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
