@@ -81,7 +81,7 @@ export async function saveQuizResult(questions, answers, score) {
 
   // Only generate improvement tips if there are wrong answers
   let improvementTip = null;
-  
+
   if (wrongAnswers.length > 0) {
     const wrongQuestionsText = wrongAnswers
       .map(
@@ -130,6 +130,7 @@ export async function saveQuizResult(questions, answers, score) {
   }
 }
 
+// server action
 export async function getAssessments() {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
