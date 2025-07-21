@@ -26,14 +26,14 @@ export default function QuizList({ assessments }) {
               </CardDescription>
             </div>
 
-            <Button className='hover:scale-90 transition duration-200 ease-in-out' onClick={() => router.push("/interview/mock")}>
+            <Button className='hover:cursor-pointer hover:scale-90 transition duration-200 ease-in-out' onClick={() => router.push("/interview/mock")}>
               Start New Quiz
             </Button>
 
           </div>
         </CardHeader>
         <CardContent>
-          <div className="space-y-4">
+          <div className="space-y-4 hover:scale-96 transition duration-200 ease-in-out">
             {assessments?.map((assessment, i) => (
               <Card
                 key={assessment.id}
