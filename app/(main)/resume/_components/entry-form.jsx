@@ -1,4 +1,6 @@
 // app/resume/_components/entry-form.jsx
+
+// we are using  Ai generation to improve the description of the resume entries here remember it 
 "use client";
 
 import { useEffect, useState } from "react";
@@ -10,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle,} from "@/components/ui/card";
 import { entrySchema } from "@/app/lib/schema";
-import { Sparkles, PlusCircle, X, Pencil, Save, Loader2 } from "lucide-react";
+import { Sparkles, PlusCircle, X, Loader2 } from "lucide-react";
 import { improveWithAI } from "@/actions/resume";
 import { toast } from "sonner";
 import useFetch from "@/hooks/use-fetch";
