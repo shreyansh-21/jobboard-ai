@@ -24,13 +24,7 @@ export default function ResumeBuilder({ initialContent }) {
   const { user } = useUser();
   const [resumeMode, setResumeMode] = useState("preview");
 
-  const {
-    control,
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({
+  const { control, register, handleSubmit, watch, formState: { errors },} = useForm({
     resolver: zodResolver(resumeSchema),
     defaultValues: {
       contactInfo: {},
@@ -42,19 +36,16 @@ export default function ResumeBuilder({ initialContent }) {
     },
   });
 
-  const {
-    loading: isSaving,
-    fn: saveResumeFn,
-    data: saveResult,
-    error: saveError,
-  } = useFetch(saveResume);
+  const {loading: isSaving,fn: saveResumeFn,data: saveResult,error: saveError,} = useFetch(saveResume);
+
+
 
   // Watch form fields for preview updates
   const formValues = watch();
 
+//   Initial resume hai to dont build just go to mark down 
   useEffect(() => {
-    if (initialContent) setActiveTab("preview");
-  }, [initialContent]);
+    if (initialContent) setActiveTab("preview");}, [initialContent]);
 
   // Update preview content when form values change
   useEffect(() => {
@@ -74,6 +65,8 @@ export default function ResumeBuilder({ initialContent }) {
     }
   }, [saveResult, saveError, isSaving]);
 
+
+
   const getContactMarkdown = () => {
     const { contactInfo } = formValues;
     const parts = [];
@@ -89,6 +82,8 @@ export default function ResumeBuilder({ initialContent }) {
       : "";
   };
 
+
+
   const getCombinedContent = () => {
     const { summary, skills, experience, education, projects } = formValues;
     return [
@@ -103,8 +98,9 @@ export default function ResumeBuilder({ initialContent }) {
       .join("\n\n");
   };
 
-  const [isGenerating, setIsGenerating] = useState(false);
 
+
+  const [isGenerating, setIsGenerating] = useState(false);
   const generatePDF = async () => {
     setIsGenerating(true);
     try {
@@ -125,6 +121,8 @@ export default function ResumeBuilder({ initialContent }) {
     }
   };
 
+
+
   const onSubmit = async (data) => {
     try {
       const formattedContent = previewContent
@@ -138,6 +136,8 @@ export default function ResumeBuilder({ initialContent }) {
       console.error("Save error:", error);
     }
   };
+
+
 
   return (
     <div data-color-mode="light" className="space-y-4">
