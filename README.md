@@ -1,11 +1,11 @@
 <h1 align="center"><strong>Job Board AI</strong></h1>
 
 <p align="center">
-  An AI-powered career development platform that helps job seekers create tailored cover letters, optimize resumes, prepare for interviews, and stay informed with industry insights – all driven by the Gemini API.
+  An AI-powered career development platform that helps job seekers create tailored cover letters, optimize resumes, prepare for interviews, and stay informed with industry insights all driven by the Gemini API.
 </p>
 
 
-<img src="https://your-cdn.com/screenshots/dashboard.png" alt="Job Board AI Dashboard" width="100%" />
+<img src="jobboard.png" alt="JobBoard AI" width="100%" />
 <hr/>
 
 <h2>Overview</h2>
