@@ -21,8 +21,8 @@ const HeroSection = () => {
 
             <div className='flex justify-center gap-4'>
                 <Link href= "/dashboard"><Button size="lg" className= "px-8">Get Started!</Button></Link>
-                {/* loom video lagani hai  */}
-                <Link href= "/dashboard"><Button size="lg" className= "px-8" variant="outline">Demo Video</Button></Link>
+
+                <Link href= "https://www.loom.com/share/632e8f87c27c42b988e0ca9dc5de1930?sid=26764122-b320-432b-a88e-5ee63c931cc7"><Button size="lg" className= "px-8" variant="outline">Demo Video</Button></Link>
             </div>
         </div>
 
