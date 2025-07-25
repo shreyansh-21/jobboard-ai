@@ -1,4 +1,6 @@
-<h1 align="center"><strong>Job Board AI</strong></h1>
+<h1 align="center"><strong>Job Board AI</strong> <br>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FFFFFF&size=16&center=true&vCenter=true&width=600&lines=Craft+Cover+Letters+with+AI;Polish+Your+Resume+Effortlessly;Ace+Mock+Interviews;Stay+Career-Ready+Always" />
+</h1>
 
 <p align="center">
   An AI-powered career development platform that helps job seekers create tailored cover letters, optimize resumes, prepare for interviews, and stay informed with industry insights all driven by the Gemini API.
