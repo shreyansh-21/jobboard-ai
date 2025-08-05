@@ -74,24 +74,27 @@ npm run dev
 </ol>
 
 <h2>Supported Industries</h2>
-<p><strong>Job Board AI currently supports professionals in 15+ industries, including:</strong></p>
+<details>
+  <summary><strong>Job Board AI currently supports professionals in 15+ industries (click to expand)</strong></summary>
+  <p>
+    <ul>
+      <li>Technology</li>
+      <li>Financial Services</li>
+      <li>Healthcare & Life Sciences</li>
+      <li>Manufacturing & Industrial</li>
+      <li>Retail & E-commerce</li>
+      <li>Media & Entertainment</li>
+      <li>Education & Training</li>
+      <li>Energy & Utilities</li>
+      <li>Professional Services</li>
+      <li>Telecommunications</li>
+      <li>Transportation & Logistics</li>
+      <li>Agriculture & Food</li>
+      <li>Construction & Real Estate</li>
+      <li>Hospitality & Tourism</li>
+      <li>Non-Profit & Social Services</li>
+    </ul>
 
-<ul>
-  <li>Technology</li>
-  <li>Financial Services</li>
-  <li>Healthcare & Life Sciences</li>
-  <li>Manufacturing & Industrial</li>
-  <li>Retail & E-commerce</li>
-  <li>Media & Entertainment</li>
-  <li>Education & Training</li>
-  <li>Energy & Utilities</li>
-  <li>Professional Services</li>
-  <li>Telecommunications</li>
-  <li>Transportation & Logistics</li>
-  <li>Agriculture & Food</li>
-  <li>Construction & Real Estate</li>
-  <li>Hospitality & Tourism</li>
-  <li>Non-Profit & Social Services</li>
-</ul>
+</details>
 
 
