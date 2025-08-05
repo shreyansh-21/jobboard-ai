@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  An AI-powered career development platform that helps job seekers create tailored cover letters, optimize resumes, prepare for interviews, and stay informed with industry insights all driven by the Gemini API.
+  An AI-powered career development platform that helps job seekers create tailored cover letters, optimize resumes, prepare for interviews, and stay informed with industry insights all driven by the Gemini API.<br> <strong>Click the image below to watch the demo</strong>
 </p>
+<a href="https://www.loom.com/share/632e8f87c27c42b988e0ca9dc5de1930?sid=26764122-b320-432b-a88e-5ee63c931cc7">
+<img src="jobboard.png" alt="JobBoard AI" width="100%" /></a>
 
-
-<img src="jobboard.png" alt="JobBoard AI" width="100%" />
 <hr/>
 
 <h2>Overview</h2>
